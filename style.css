@@ -1,17 +1,11 @@
 body{
     font-family: 'Questrial';
 }
-h1{
-    font-size: 30px;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 24px;
-}
 h2{
     font-size: 22px;
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 h3{
     font-size: 20px;
@@ -23,6 +17,23 @@ h4{
     text-align: center;
     font-family: 'Montserrat';
 }
+.titulo{
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 24px;
+    color: rgba(0, 0, 0, 0.829);
+}
+.vila{
+    margin-left: 6px;
+    color: #003172;
+}
+.formosa{
+    margin-left: 6px;
+    color: #FFC310;
+}
 nav {
     background-color: #EFECEC;
     display: flex;
@@ -31,6 +42,8 @@ nav {
     gap: 18%;
     width: 100%;
     height: 120px;
+    position: absolute;
+    top: 0;
 }
 nav ion-icon.hbg{
     opacity: 0;
@@ -64,7 +77,6 @@ img.etec{
 .sobre {
     color: #003172;
     cursor: pointer;
-    transition: .3s;
 }
 .sobre:hover {
     border-bottom: 1px solid #FFC310;
@@ -72,6 +84,11 @@ img.etec{
 }
 .sobre ion-icon{
     font-size: 1.12rem;
+    transition: .5s;
+}
+.sobre.ativo ion-icon{
+    transition: .5s;
+    transform: rotate(179deg);
 }
 .menu {
     position: absolute;
@@ -84,6 +101,7 @@ img.etec{
     padding: 5px;
     opacity: 0;
     visibility: hidden;
+    transition: .3s;
 }
 .menu a{
     color: #ffffff;
@@ -176,7 +194,7 @@ img.centro{
     gap: 0 40px;
     width: 100%;
     background-color: #f5f5f5;
-    margin-top: 3%;
+    margin-top: 150px;
 }
 button{
     border-radius: 15%;
@@ -193,9 +211,6 @@ button{
 button:hover{
     transform: scale(0.8);
 }
-button img{
-    margin-bottom: 3%;
-}
 .trabalhos{
     display: flex;
     justify-content: center;
@@ -206,8 +221,9 @@ button img{
     margin-bottom: 3%;
 }
 .trabalhos img{
-    width: 60%;
-    height: 70%;
+    width: 50%;
+    height: 65%;
+    margin-bottom: 3%;
 }
 .noticia{
     text-align: center;
@@ -231,6 +247,33 @@ button img{
     align-items: center;
     gap: 7%;
 }
+.Textschool ion-icon{ 
+    color: #003172;
+    font-size: 6rem;
+    margin-bottom: -45px;
+    cursor: pointer;
+}
+.Textschool{
+    text-align: center;
+    transition: .5s;
+}
+.Textschool.ativo{
+    margin-top: 70px;
+    margin-bottom: -45px;
+    transform: rotate(179deg);
+}
+.school{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+}
+.school.ativo{
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    transition: .6s;
+}
 
 @media only screen and (max-device-width: 995px) {
     img.centro{
@@ -246,17 +289,34 @@ button img{
         background-color: #003172;
         height: 38px;
         width: 100%;
-        margin-top: 16%;
+        margin-top: 250px;
         margin-bottom: 14%;
         border-bottom: 25px solid #FFC310;
         border-top: 25px solid #FFC310;
     }
-    h1{
-        font-size: 40px;
-        margin-bottom: 1%;
+    .titulo{
+        font-size: 50px;
+        margin-bottom: 2%;
+    }
+    .vila{
+        margin-left: 1%;
+    }
+    .formosa{
+        margin-left: 1%;
     }
     h2{
-        font-size: 30px;
+        font-size: 13px;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    h3{
+        font-size: 30px
+    }
+    footer ion-icon{
+        margin-top: 90px;
+    }
+    .call{
+        margin-right: 10px;
     }
     h4{
         font-size: 42px;
@@ -279,12 +339,13 @@ button img{
     }
     nav ul.a.ativo {
         width: 96%;
-        height: 120px;
+        height: 180px;
+        font-size: 35px;
         position: absolute;
-        margin-top: 17pc;
+        margin-top: 340px;
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
         background-color: #EFECEC;
         align-items: baseline;
         border-bottom: 3px solid #003172;
@@ -293,12 +354,30 @@ button img{
         visibility: visible;
         transition: .3s;
     }
+    .sobre ion-icon{
+        transform: rotate(-92deg);
+        font-size: 2rem;
+    }
+    .sobre.ativo ion-icon{
+        transform: rotate(92deg);
+    }
     .menu{
+        height: 110px;
+        width: 180px;
         top: 25px;
-        left: 14%;
+        left: 22%;
+    }
+    .menu a{
+        font-size: 30px;
+        color: #ffffff;
+    }
+    .menu ul{
+        padding: 7px;
     }
     .menu.ativo{
-        left: 14%;
+        height: 110px;
+        width: 180px;
+        left: 22%;
     }
     .noticia{
         background-color: #F4F4F4;
