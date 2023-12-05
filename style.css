@@ -309,7 +309,7 @@ button:hover{
         margin-left: 1%;
     }
     h2{
-        font-size: 22px;
+        font-size: 32px;
         margin-left: 20%;
         margin-right: 20%;
     }
@@ -367,7 +367,7 @@ button:hover{
     }
     .menu{
         height: 110px;
-        width: 180px;
+        width: 220px;
         top: 25px;
         left: 22%;
     }
@@ -380,7 +380,7 @@ button:hover{
     }
     .menu.ativo{
         height: 110px;
-        width: 180px;
+        width: 220px;
         left: 22%;
     }
     .noticia{
