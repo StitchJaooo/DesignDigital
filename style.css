@@ -346,7 +346,7 @@ button:hover{
         height: 180px;
         font-size: 35px;
         position: absolute;
-        margin-top: 300px;
+        margin-top: 390px;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -357,6 +357,22 @@ button:hover{
         opacity: 1;
         visibility: visible;
         transition: .3s;
+    }
+    img.etec{
+        height: 200px;
+        width: 200px;
+    }
+    .esquerda{
+        position: absolute;
+        height: 200px;
+        width: 120px; 
+        left: 0;
+    }
+    .direita{
+        position: absolute;
+        height: 200px;
+        width: 130px;
+        right: 0;
     }
     .sobre ion-icon{
         transform: rotate(-92deg);
