@@ -367,7 +367,7 @@ button:hover{
     }
     .menu{
         height: 110px;
-        width: 220px;
+        width: 250px;
         top: 25px;
         left: 22%;
     }
@@ -380,7 +380,7 @@ button:hover{
     }
     .menu.ativo{
         height: 110px;
-        width: 220px;
+        width: 250px;
         left: 22%;
     }
     .noticia{
