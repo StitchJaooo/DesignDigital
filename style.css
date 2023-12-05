@@ -309,9 +309,9 @@ button:hover{
         margin-left: 1%;
     }
     h2{
-        font-size: 13px;
-        margin-left: 25%;
-        margin-right: 25%;
+        font-size: 22px;
+        margin-left: 20%;
+        margin-right: 20%;
     }
     h3{
         font-size: 30px
@@ -342,11 +342,11 @@ button:hover{
         transition: .3s;
     }
     nav ul.a.ativo {
-        width: 96%;
+        width: 100%;
         height: 180px;
         font-size: 35px;
         position: absolute;
-        margin-top: 340px;
+        margin-top: 300px;
         display: flex;
         flex-direction: column;
         gap: 20px;
