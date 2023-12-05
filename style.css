@@ -328,6 +328,7 @@ button:hover{
     }
     nav{
         gap: 50%;
+        height: 200px;
     }
     nav ion-icon.hbg{
         opacity: 1;
