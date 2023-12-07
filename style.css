@@ -328,7 +328,8 @@ button:hover{
         font-size: 32px;
     }
     h3{
-        font-size: 30px
+        font-size: 30px;
+        font-weight: normal;
     }
     footer ion-icon{
         margin-top: 90px;
@@ -447,7 +448,7 @@ button:hover{
     font-size: 5rem;
     color: #FFC310;
     text-align: center;
-    width: 22%;
+    width: 20%;
     }
     button{
         border-radius: 15%;
